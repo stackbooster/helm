@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  stackbooster-agent:
+  - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2025-02-18T14:13:10.459082+01:00"
+    description: Stackbooster agent
+    digest: 0630b8550132e4612e8fc0b1eda10445fc51b231c717a4f26be789873771cd34
+    icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
+    name: stackbooster-agent
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-02-18T14:13:10.458311+01:00"
