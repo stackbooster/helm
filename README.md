@@ -5,7 +5,7 @@ Welcome to the Helm charts repository by **Stackbooster**.
 ## Repository Contents
 
 - **charts/**
-  - `stackbooster-agent` last version `1.0.0` — the Helm chart package for installing the agent.
+  - `stackbooster-agent` last version `1.0.1` — the Helm chart package for installing the agent.
 
 ## How to Add the Repository
 
@@ -23,18 +23,18 @@ After that, Helm will be able to find the `stackbooster-agent` chart in the `sta
 To install the chart named `stackbooster-agent`, run:
 
 ```
-helm install <releaseName> stackbooster/stackbooster-agent --version 1.0.0
+helm install <releaseName> stackbooster/stackbooster-agent --version 1.0.1
 ```
 
 If needed, you can specify the desired agent mode (`agentMode`) via the `--set` parameter. For example:
 
 - **Full mode** (`full`):
   ```
-  helm install stackbooster stackbooster/stackbooster-agent --version 1.0.0 --set agentMode=full --namespace stackbooster —create-namespace
+  helm install stackbooster stackbooster/stackbooster-agent --version 1.0.1 --set agentMode=full --namespace stackbooster —create-namespace
   ```
 - **Minimal mode** (`readonly`):
   ```
-  helm install stackbooster stackbooster/stackbooster-agent --version 1.0.0 --set agentMode=readonly --namespace stackbooster —create-namespace
+  helm install stackbooster stackbooster/stackbooster-agent --version 1.0.1 --set agentMode=readonly --namespace stackbooster —create-namespace
   ```
 
 > **Important**: When using `agentMode=full`, the chart requires [cert-manager](https://cert-manager.io) to be installed in the cluster.  
@@ -48,7 +48,7 @@ If you have already installed the chart and want to change the mode (or any othe
 For example, to switch to full mode:
 
 ```
-helm upgrade stackbooster stackbooster/stackbooster-agent --version 1.0.0 --set agentMode=full --namespace stackbooster
+helm upgrade stackbooster stackbooster/stackbooster-agent --version 1.0.1 --set agentMode=full --namespace stackbooster
 ```
 
 ## Verifying Chart Availability
