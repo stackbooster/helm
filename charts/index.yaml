@@ -5,6 +5,17 @@ entries:
     appVersion: 1.24.0
     created: "2025-04-14T11:27:31.169775+07:00"
     description: Stackbooster agent
+    digest: 68c8f3c2fc02b90c3f1387ae6f4a39feb6d05143c7e4e17d8383aa135b828f1b
+    icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
+    name: stackbooster-agent
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2025-05-01T17:09:54.367566+07:00"
+    description: Stackbooster agent
     digest: 65e82d8cc40124f79e81141f55ee537644c60688efda726323af0d1cd9481159
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
     name: stackbooster-agent
@@ -23,4 +34,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.0.tgz
     version: 1.0.0
-generated: "2025-04-14T11:27:31.165382+07:00"
+generated: "2025-05-01T17:09:54.364626+07:00"
