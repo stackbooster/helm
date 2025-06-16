@@ -3,7 +3,24 @@ entries:
   stackbooster-agent:
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.146969+07:00"
+    created: "2025-06-16T16:25:56.390798+07:00"
+    dependencies:
+    - alias: metrics
+      condition: metrics.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 27.16.0
+    description: Stackbooster agent
+    digest: 715671bf3058f752bc10d751c0bffd23e622a98f9551431a0dda9a197cb572c9
+    icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
+    name: stackbooster-agent
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2025-06-16T16:25:56.383078+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -19,7 +36,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.139226+07:00"
+    created: "2025-06-16T16:25:56.375232+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -35,7 +52,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.129999+07:00"
+    created: "2025-06-16T16:25:56.367712+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -51,7 +68,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.120776+07:00"
+    created: "2025-06-16T16:25:56.359117+07:00"
     description: Stackbooster agent
     digest: 303325337f9568950ad4d8a6ea7fd669b1b99cb5bbf094fc7b335332e155c998
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -62,7 +79,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.119986+07:00"
+    created: "2025-06-16T16:25:56.357625+07:00"
     description: Stackbooster agent
     digest: 7d619e78cb9c1132282f09ec79d33f4d18126bb8051ba1a42f97c4ffde974e85
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -73,7 +90,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.119226+07:00"
+    created: "2025-06-16T16:25:56.35678+07:00"
     description: Stackbooster agent
     digest: 65e82d8cc40124f79e81141f55ee537644c60688efda726323af0d1cd9481159
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -84,7 +101,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-06-12T08:52:09.118444+07:00"
+    created: "2025-06-16T16:25:56.35599+07:00"
     description: Stackbooster agent
     digest: a715e5c9def603e20fc89b3c977cc5ab654af386af0cf60a3c06eccf25b388d5
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -93,4 +110,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.0.tgz
     version: 1.0.0
-generated: "2025-06-12T08:52:09.116355+07:00"
+generated: "2025-06-16T16:25:56.354083+07:00"
