@@ -3,7 +3,34 @@ entries:
   stackbooster-agent:
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.652132+07:00"
+    created: "2026-09-10T17:24:07.966819+07:00"
+    dependencies:
+    - alias: federation
+      condition: federation.enabled
+      name: federation
+      repository: file://subcharts/federation
+      version: 0.1.0
+    - alias: metricsfull
+      condition: metricsfull.enabled
+      name: metricsfull
+      repository: file://subcharts/metricsfull
+      version: 0.1.0
+    - alias: otel
+      condition: otel.enabled
+      name: otel
+      repository: file://subcharts/otel
+      version: 0.1.0
+    description: Stackbooster agent
+    digest: 1217a944fb0c06db2996276ab4dc3bfcaf3e3ff00f432461d3a15e21a7470e3d
+    icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
+    name: stackbooster-agent
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.17.tgz
+    version: 1.0.17
+  - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2026-09-10T17:24:07.830212+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -30,7 +57,7 @@ entries:
     version: 1.0.16
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.537879+07:00"
+    created: "2026-09-10T17:24:07.495071+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -57,7 +84,7 @@ entries:
     version: 1.0.15
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.440319+07:00"
+    created: "2026-09-10T17:24:07.346863+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -84,7 +111,7 @@ entries:
     version: 1.0.14
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.257934+07:00"
+    created: "2026-09-10T17:24:07.286032+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -111,7 +138,7 @@ entries:
     version: 1.0.13
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.03372+07:00"
+    created: "2026-09-10T17:24:07.168642+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -138,7 +165,7 @@ entries:
     version: 1.0.12
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:57.894493+07:00"
+    created: "2026-09-10T17:24:06.92768+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -165,7 +192,7 @@ entries:
     version: 1.0.11
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:57.343245+07:00"
+    created: "2026-09-10T17:24:06.709091+07:00"
     dependencies:
     - alias: federation
       condition: federation.enabled
@@ -187,7 +214,7 @@ entries:
     version: 1.0.10
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.702017+07:00"
+    created: "2026-09-10T17:24:08.383821+07:00"
     dependencies:
     - alias: metricslite
       condition: metricslite.enabled
@@ -209,7 +236,7 @@ entries:
     version: 1.0.9
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.686445+07:00"
+    created: "2026-09-10T17:24:08.313096+07:00"
     dependencies:
     - alias: metrics
       condition: metrics.enabled
@@ -226,7 +253,7 @@ entries:
     version: 1.0.8
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.679018+07:00"
+    created: "2026-09-10T17:24:08.237616+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -242,7 +269,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.670356+07:00"
+    created: "2026-09-10T17:24:08.141987+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -258,7 +285,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.662498+07:00"
+    created: "2026-09-10T17:24:08.088955+07:00"
     dependencies:
     - alias: metrics
       name: prometheus
@@ -274,7 +301,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.654302+07:00"
+    created: "2026-09-10T17:24:07.980279+07:00"
     description: Stackbooster agent
     digest: 303325337f9568950ad4d8a6ea7fd669b1b99cb5bbf094fc7b335332e155c998
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -285,7 +312,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:58.653351+07:00"
+    created: "2026-09-10T17:24:07.972461+07:00"
     description: Stackbooster agent
     digest: 7d619e78cb9c1132282f09ec79d33f4d18126bb8051ba1a42f97c4ffde974e85
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -296,7 +323,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:57.298542+07:00"
+    created: "2026-09-10T17:24:06.438234+07:00"
     description: Stackbooster agent
     digest: 65e82d8cc40124f79e81141f55ee537644c60688efda726323af0d1cd9481159
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -307,7 +334,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-09-10T14:02:57.295469+07:00"
+    created: "2026-09-10T17:24:06.434523+07:00"
     description: Stackbooster agent
     digest: a715e5c9def603e20fc89b3c977cc5ab654af386af0cf60a3c06eccf25b388d5
     icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
@@ -316,4 +343,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.0.tgz
     version: 1.0.0
-generated: "2026-09-10T14:02:57.290443+07:00"
+generated: "2026-09-10T17:24:06.329028+07:00"
