@@ -2,6 +2,33 @@ apiVersion: v1
 entries:
   stackbooster-agent:
   - apiVersion: v2
+    appVersion: 1.25.0
+    created: "2026-10-06T13:07:39.62246+07:00"
+    dependencies:
+    - alias: federation
+      condition: federation.enabled
+      name: federation
+      repository: file://subcharts/federation
+      version: 0.1.0
+    - alias: metricsfull
+      condition: metricsfull.enabled
+      name: metricsfull
+      repository: file://subcharts/metricsfull
+      version: 0.1.0
+    - alias: otel
+      condition: otel.enabled
+      name: otel
+      repository: file://subcharts/otel
+      version: 0.1.0
+    description: Stackbooster agent
+    digest: 2940ebfcedfc1e616925e0bb5f0203d59ba1f762c5b434d367ba119de21cc76d
+    icon: https://raw.githubusercontent.com/helm/helm/master/docs/images/logo-helm.svg
+    name: stackbooster-agent
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.25.tgz
+    version: 1.0.25
+  - apiVersion: v2
     appVersion: 1.24.0
     created: "2026-10-05T16:31:56.327481+07:00"
     dependencies:
@@ -532,4 +559,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/stackbooster/helm/main/charts/stackbooster-agent-1.0.0.tgz
     version: 1.0.0
-generated: "2026-10-05T16:31:56.03094+07:00"
+generated: "2026-10-06T13:07:39.604809+07:00"
